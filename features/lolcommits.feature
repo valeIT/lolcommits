@@ -235,7 +235,7 @@ Feature: Basic UI functionality
     When I run `lolcommits --timelapse --period today`
     Then there should be exactly 1 gif in "~/.lolcommits/sunday/timelapses"
 
-  @requires_ffmpeg @slow_process
+  @slow_process
   Scenario: should generate a lolcommit animated gif
     Given I am in a git repo named "gif"
       And I do a git commit
@@ -245,7 +245,7 @@ Feature: Basic UI functionality
       And a file named "~/.lolcommits/animate/raw_capture.mp4" should not exist
       And there should be exactly 1 gif in "~/.lolcommits/gif"
 
-  @requires_ffmpeg @slow_process
+  @slow_process
   Scenario: should generate a lolcommit video
     Given I am in a git repo named "video"
       And I do a git commit
@@ -255,7 +255,7 @@ Feature: Basic UI functionality
       And a file named "~/.lolcommits/animate/raw_capture.mp4" should not exist
       And there should be exactly 1 mp4 in "~/.lolcommits/video"
 
-  @requires_ffmpeg @slow_process
+  @slow_process
   Scenario: should generate a lolcommit video and animated gif
     Given I am in a git repo named "video-and-gif"
       And I do a git commit

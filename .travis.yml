@@ -15,10 +15,13 @@ matrix:
 before_install:
   # stub mplayer/ffmpeg so it looks like they are installed
   - mkdir -p ~/bin
-  - touch ~/bin/mplayer ~/bin/ffmpeg
-  - chmod +x ~/bin/mplayer ~/bin/ffmpeg
+  - touch ~/bin/mplayer
+  - chmod +x ~/bin/mplayer
   - export PATH=~/bin:$PATH
   - git --version
+
+install:
+  - sudo apt-get install libav-tools
 
 notifications:
   slack:

@@ -7,6 +7,11 @@ This project adheres to [Semantic Versioning][Semver].
 
   * Your contribution here!
 
+## [0.16.2][] (24 Aug 2020)
+  * Support delays w/ Linux animated GIFs (@theY4Kman [#405][])
+  * Upgrade git gem to version 1.6.0 (@depfu [#402][])
+  * Upgrade lolcommits-loltext to version 0.4.0 (@depfu [#401][])
+
 ## [0.16.1][] (21 Jan 2020)
   * Upgrade mini_magick to version 4.10.1 (@depfu [#399][])
   * Fix rubocop config (@Salzig [#400][])
@@ -42,7 +47,7 @@ This project adheres to [Semantic Versioning][Semver].
   * Update all links and badges (in gemspec, README etc.) to lolcommits
     organisation (@matthutchinson)
   * remove gem `post_install` message (@matthutchinson)
-  * use `lolcommits-loltext ~> 0.1.0' (@matthutchinson)
+  * use `lolcommits-loltext ~> 0.1.0` (@matthutchinson)
 
 ## [0.13.0][] (23 April 2019)
   * Require at least Ruby 2.3
@@ -56,7 +61,7 @@ This project adheres to [Semantic Versioning][Semver].
 
 ## [0.12.1][] (27 March 2018)
   * Name passed to `Plugin::Base` initializer (@matthutchinson)
-  * Removed dead method `configured? in `Plugin::Base`
+  * Removed dead method `configured?` in `Plugin::Base`
   * Using `YAML.safe_load` for configuration loading
 
 ## [0.12.0][] (15 March 2018)
@@ -581,3 +586,6 @@ This project adheres to [Semantic Versioning][Semver].
 [#398]: https://github.com/lolcommits/lolcommits/pull/398
 [#399]: https://github.com/lolcommits/lolcommits/pull/399
 [#400]: https://github.com/lolcommits/lolcommits/pull/400
+[#401]: https://github.com/lolcommits/lolcommits/pull/401
+[#402]: https://github.com/lolcommits/lolcommits/pull/402
+[#405]: https://github.com/lolcommits/lolcommits/pull/405
